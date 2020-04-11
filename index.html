@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <title>SWE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+<!-- navbar begin-->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label> <div class="logo">  <img src="logo.png">  </div> </label>
+      <ul>
+        <li> <a href="View_page.html">View</a></li>
+        <li><a class="active" href="#">Home</a></li>
+        <li> <a href="Login.html">Sing in</a></li>
+
+      </ul>
+    </nav>
+    <!-- navbar end-->
+<div class="form-group m-0">
+  <button type="button" id="button1" class="btn btn-primary btn-block">
+    Add new task
+  </button>
+</div>
+    <!-- home page-->
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px;
+    text-align: left;
+  }
+</style>
+
+<table id="t1" style="width:100%">
+  <tr>
+    <th>Task Id</th>
+    <th>Task Name</th>
+    <th>Duration</th>
+    <th>Start(Date)</th>
+    <th>Finish(Date)</th>
+  </tr>
+  <tr>
+    <td><input id="tid"></td>
+    <td><input type="text" id="tn"></td>
+    <td><input id="du"></td>
+    <td><input type="date" id="sd"></td>
+    <td><input type="date" id="fd"></td>
+  </tr>
+
+
+</table>
+
+<button type="button" id="addb">Add the task</button>
+
+
+
+<button type="button" id="button2" class="btn btn-primary btn-block">
+  Add Resource
+</button>
+
+<table id="tr" style="width:100%">
+  <tr>
+    <th>Resource Name</th>
+    <th>Type</th>
+    <th>Material</th>
+    <th>Max(No. of source)</th>
+    <th>St.Rate</th>
+    <th>Ovt.</th>
+    <th>Cost/Use</th>
+  </tr>
+  <tr>
+    <td><input id="rname"></td>
+    <td>  <select id="type"><option  value="Work">Work</option>
+      <option value="Cost">Cost</option>
+      <option value="Material">Material</option>
+    </select></td>
+
+    <td><input  id="mat"></td>
+    <td><input id="max"></td>
+    <td><input  id="st"></td>
+    <td><input  id="ovt"></td>
+    <td><input id="cost"></td>
+  </tr>
+
+
+</table>
+<button type="button" id="button21">Add the Resource</button>
+
+
+
+
+
+
+
+
+
+
+
+<button type="button" id="m4" class="btn btn-primary btn-block">
+  Add Resource to the task
+</button>
+<table id="t2" style="width:100%">
+  <tr>
+    <th>Task Id</th>
+    <th>Task Name</th>
+    <th>Duration</th>
+    <th>Start(Date)</th>
+    <th>Finish(Date)</th>
+    <th>Resource Name</th>
+  </tr>
+
+
+
+
+</table>
+<button type="button" id="addrt">Add the Resource to the task</button>
+
+
+
+
+
+<button type="button" id="button4" class="btn btn-primary btn-block">
+Display all the tasks</button>
+<table id="table4" style="width:100%">
+  <tr>
+    <th>Task Id</th>
+    <th>Task Name</th>
+    <th>Duration</th>
+    <th>Start(Date)</th>
+    <th>Finish(Date)</th>
+
+  </tr>
+</table>
+
+
+<button type="button" id="button5" class="btn btn-primary btn-block">
+  Display all the Resources
+</button>
+
+<table id="table5" style="width:100%">
+  <tr>
+    <th>Resource Name</th>
+    <th>Type</th>
+    <th>Material</th>
+    <th>Max(No. of source)</th>
+    <th>St.Rate</th>
+    <th>Ovt.</th>
+    <th>Cost/Use</th>
+  </tr>
+</table>
+
+
+
+
+
+<button type="button" id="button6" class="btn btn-primary btn-block">
+  Display all the tasks and resources</button>
+<table id="table6" style="width:100%">
+  <tr>
+    <th>Task Id</th>
+    <th>Task Name</th>
+    <th>Duration</th>
+    <th>Start(Date)</th>
+    <th>Finish(Date)</th>
+    <th>Resource Name</th>
+
+  </tr>
+</table>
+
+
+
+<!-- home page end-->
+<script src="main.js"></script>
+
+
+    <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+</html>
